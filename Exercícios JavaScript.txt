@@ -1,0 +1,41 @@
+//#region - Exercício Comparadores
+const x = 5;
+const y = 10;
+
+console.log(x > y);
+console.log(x < y);
+console.log(x >= y);
+console.log(x <= y);
+console.log(x == y); // comparação de valor
+console.log(x === y);// comparação de valor e tipo
+console.log(x !== y); // diferentes
+//#endregion
+
+//#region - Verifique os resultados das comparações a seguir:
+console.log(10 == "10");
+
+console.log(10 === "10");
+
+console.log(true == 1);
+
+console.log(true === 1);
+
+console.log(null == undefined); 
+
+console.log(null === undefined); 
+//#endregion
+
+//#region - Exercício Sistema de Acesso
+
+const dataNascimento = new Date("2000-10-09");
+const ativo = true;
+const calculo = (new Date() - dataNascimento);
+
+//Transformando 18 anos em milissegundos
+const dezoitoemMilissegundos = 18 * 365.25 * 24 * 60 * 60 * 1000;
+
+//comparando milissegundos com milissegundos!
+const podeAcessar = (new Date() - dataNascimento) >= dezoitoemMilissegundos && ativo;
+console.log(podeAcessar)
+
+//#endregion
